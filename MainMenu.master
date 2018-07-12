@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MainMenu.master.cs" Inherits="MainMenu" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>
+		<asp:ContentPlaceHolder id="title" runat="server">
+        This is home page
+        </asp:ContentPlaceHolder>
+    </title>
+	<link href="StylesSheets/Main.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+	<div class="wrapper">
+		<div class="menu">
+			<ul>
+				<li class="navigation_first_item"><a href="MainMenu.aspx">Main Menu</a></li>
+				<li><a href="Werehouses.aspx">Warehouses</a></li>
+				<li><a href="#">Products</a></li>
+				<li><a href="#">Users</a></li>
+				<li><a href="#">Admin Panel</a></li>
+				
+			</ul>
+
+		</div>	
+		<div class ="clear"></div>
+		<div class ="content">
+		
+			<asp:ContentPlaceHolder id="ContentBody" runat="server">
+			
+			</asp:ContentPlaceHolder>
+		</div>
+		<div class ="clear"></div>
+		<div class ="footer">
+			<h2><
+				Werehouses stocktaking
+			</h2>
+		</div>
+    </div>
+	</form>
+</body>
+</html>
